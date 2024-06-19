@@ -146,6 +146,8 @@ MonoBehaviour:
   hungerNeed: 100
   currentHunger: 0
   givenScore: 2
+  eatSfx: {fileID: 8300000, guid: aebae0e89d575dc43ae340319487ef87, type: 3}
+  fullSfx: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
 --- !u!65 &5187292162440062406
 BoxCollider:
   m_ObjectHideFlags: 0
