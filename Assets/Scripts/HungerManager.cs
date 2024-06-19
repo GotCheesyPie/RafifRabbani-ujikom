@@ -11,6 +11,7 @@ public class HungerManager : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collided");
+        Debug.Log(collision.collider.name);
         if(collision.gameObject.tag == "Food")
         {
             currentHunger += 25;
