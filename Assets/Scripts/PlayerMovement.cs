@@ -15,5 +15,15 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         controller.Move(playerVelocity * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            ThrowFood();
+        }
+    }
+
+    void ThrowFood()
+    {
+        animator.SetTrigger("throw");
     }
 }
