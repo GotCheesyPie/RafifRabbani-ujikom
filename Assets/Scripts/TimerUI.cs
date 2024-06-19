@@ -13,7 +13,7 @@ public class TimerUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        min += Time.fixedDeltaTime;
+        min += Time.deltaTime;
         timerText.text = Mathf.FloorToInt(startTime - min).ToString();
     }
 }

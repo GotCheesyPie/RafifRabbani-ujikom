@@ -14,17 +14,17 @@ public class SpawnMobs : MonoBehaviour
         Vector3 spawnPoint = new Vector3(randX, first.position.y, first.position.z);
         Instantiate(mobPrefabs[mobIndex], spawnPoint, first.rotation);
     }
-    IEnumerator SpawnWithDelay()
+    IEnumerator SpawnWithInterval()
     {
         while(true)
         {
             Spawn();
-            yield return new WaitForSeconds(Random.Range(1, 3));
+            yield return new WaitForSeconds(2);
         }
     }
 
     void Start()
     {
-        StartCoroutine(SpawnWithDelay());
+        StartCoroutine(SpawnWithInterval());
     }
 }
