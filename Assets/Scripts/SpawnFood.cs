@@ -7,6 +7,6 @@ public class SpawnFood : MonoBehaviour
     public GameObject foodPrefab;
     public void Spawn()
     {
-        Instantiate(foodPrefab, transform.position + Vector3.forward, transform.rotation);
+        Instantiate(foodPrefab, transform.position + Vector3.forward + Vector3.up, transform.rotation);
     }
 }

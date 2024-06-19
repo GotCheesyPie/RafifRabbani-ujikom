@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
+      propertyPath: m_TagString
+      value: Food
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -63,6 +67,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2530613569019407951}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 990647115384709386}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6072744678371256154}
   m_SourcePrefab: {fileID: 100100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
 --- !u!1 &7726921867533064663 stripped
 GameObject:
@@ -82,3 +92,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: -3
+--- !u!65 &990647115384709386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726921867533064663}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4597009, y: 0.13234863, z: 0.55363166}
+  m_Center: {x: 0, y: 0, z: -0.0000001937151}
+--- !u!114 &6072744678371256154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726921867533064663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7308da67a8646419a3addda9826097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
