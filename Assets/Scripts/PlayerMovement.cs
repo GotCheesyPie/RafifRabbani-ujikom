@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 playerVelocity;
     public float playerSpeed;
     public Animator animator;
+    public SpawnFood spawnFood;
     void Update()
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
@@ -25,5 +26,6 @@ public class PlayerMovement : MonoBehaviour
     void ThrowFood()
     {
         animator.SetTrigger("throw");
+        spawnFood.Spawn();
     }
 }

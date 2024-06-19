@@ -8,6 +8,6 @@ public class ConstantMove : MonoBehaviour
 
     void Update()
     {
-        transform.position = new Vector3(0, 0, transform.position.z + (-moveSpeed) * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + (-moveSpeed) * Time.deltaTime);
     }
 }
